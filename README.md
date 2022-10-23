@@ -21,7 +21,9 @@ The steps for this homework are divided into the following sections:
 Create a Joint Savings Account Contract in Solidity
 
 
-Compile and Deploy Your Contract in the JavaScript VM
+
+
+Compile and Deploy Your Contract in the Remix VM
 
 
 Interact with Your Deployed Smart Contract
@@ -33,9 +35,11 @@ Step 1: Create a Joint Savings Account Contract in Solidity
 
 From the provided starter code, open the Solidity file named joint_savings.sol in the Remix IDE.
 
+![](Execution_Results/pic1.png)
 
 Define a new contract named JointSavings.
 
+![](Execution_Results/pic2.png)
 
 Define the following variables in the new contract:
 
@@ -87,13 +91,13 @@ Add a fallback function so that your contract can store ether that’s sent from
 
 
 
-Step 2: Compile and Deploy Your Contract in the JavaScript VM
+Step 2: Compile and Deploy Your Contract in the Remix VM
 
 
 Compile your smart contract. If an error occurs, review your code, and make the necessary changes for a successful compilation.
 
 
-In the Remix IDE, navigate to the “Deploy & Run Transactions” pane, and then make sure that “JavaScript VM” is selected as the environment.
+In the Remix IDE, navigate to the “Deploy & Run Transactions” pane, and then make sure that “Remix VM” is selected as the environment.
 
 
 Click the Deploy button to deploy your smart contract, and then confirm that it successfully deployed.
@@ -101,6 +105,9 @@ Click the Deploy button to deploy your smart contract, and then confirm that it 
 
 
 Step 3: Interact with Your Deployed Smart Contract
+
+![](Execution_Results/Deploy.png)
+
 Now that your contract is deployed, it’s time to test its functionality! After each step, capture a screenshot of the execution, and then save it in a folder named Execution_Results. You’ll share this folder with your final submission.
 To interact with your deployed smart contract, complete the following steps:
 
@@ -120,19 +127,30 @@ Test the deposit functionality of your smart contract by sending the following a
 
 
 Transaction 1: Send 1 ether as wei.
-
+![](Execution_Results/Deposit1.png)
 
 Transaction 2: Send 10 ether as wei.
-
+![](Execution_Results/deposit10.png)
 
 Transaction 3: Send 5 ether.
+![](Execution_Results/Deposit5.png)
 
+Contract Balance. 
 
+![](Execution_Results/ContractBalance.png)
 
 Note Remembering how to convert ether to wei and vice versa can be challenging. So, you can use a website like Ethereum Unit Converter to ease doing the conversion.
 
 
 
 Once you’ve successfully deposited funds into your contract, test the contract’s withdrawal functionality by withdrawing 5 ether into accountOne and 10 ether into accountTwo. After each transaction, use the contractBalance function to verify that the funds were withdrawn from your contract. Also, use the lastToWithdraw and lastWithdrawAmount functions to verify that the address and amount were correct.
+
+Withdraw 5 ehter
+![](Execution_Results/Withdraw5.png)
+
+Withdraw 10 ether
+![](Execution_Results/Withdraw10.png)
+
+
 
 
